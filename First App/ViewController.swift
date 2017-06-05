@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TheLabel: UILabel!
+    
+    @IBAction func PushMe(_ sender: Any) {
+        TheLabel.text = "This is KaiLi"
+        print("button is tapped")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
