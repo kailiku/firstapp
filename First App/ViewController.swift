@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBAction func PushMe(_ sender: Any) {
         TheLabel.text = "This is KaiLi"
         print("button is tapped")
+        print ("try github")
     }
     
     override func viewDidLoad() {
