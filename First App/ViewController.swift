@@ -12,10 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var TheLabel: UILabel!
     
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
     @IBAction func PushMe(_ sender: Any) {
-        TheLabel.text = "This is KaiLi"
-        print("button is tapped")
-        print ("try github")
+        print(Text1.text!)
+        print(Text2.text!)
+        
+        TheLabel.text = "My Answer is.. \(Int(Text1.text!)! + Int(Text2.text!)!)"
+        
     }
     
     override func viewDidLoad() {
